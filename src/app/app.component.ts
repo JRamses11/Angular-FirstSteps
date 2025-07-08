@@ -4,9 +4,17 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+  <h1>Hola Angular desde {{city.toLocaleUpperCase()}}</h1>
+  `,
+  styles: [
+    `
+    h1{
+      color: red;
+    }
+    `
+  ]
 })
 export class AppComponent {
-  title = 'Angular-FirstSteps';
+  city='Culiacan';
 }
