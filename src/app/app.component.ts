@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { UserComponent } from './user/user.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  template: `
-  <h1>Hola Angular desde {{city.toLocaleUpperCase()}}</h1>
-  `,
+  imports: [UserComponent],
+  templateUrl: './app.component.html',
   styles: [
     `
     h1{
