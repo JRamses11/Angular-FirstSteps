@@ -9,9 +9,11 @@ import { GamesComponent } from '../games/games.component';
 })
 export class UserComponent {
  userName='Ramses';
- isLoggedIn=true;
+ isLoggedIn=false; // ESTA FUNCIONANDO CON UN STATE
 
-
+greet(){
+  alert(`Hello ${this.userName}, welcome to the game portal!`);
+}
 
 
 
